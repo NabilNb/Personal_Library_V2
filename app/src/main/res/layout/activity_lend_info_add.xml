@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LendInfoAdd"
+    android:background="@drawable/bg4019521">
+
+    <TextView
+        android:id="@+id/lendTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:text="Lending Information"
+        android:textAlignment="center"
+
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/lendName"
+        android:layout_width="73dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="Book Name"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/lendEditTextName"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendTitle" />
+
+    <!--    <CheckBox-->
+    <!--        android:id="@+id/lendcheckBox"-->
+    <!--        android:layout_width="309dp"-->
+    <!--        android:layout_height="35dp"-->
+    <!--        android:layout_marginTop="252dp"-->
+    <!--        android:text="Are you currently reading this book?"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/lendTitle" />-->
+
+    <TextView
+        android:id="@+id/lendAuthor"
+        android:layout_width="74dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Author"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/lendEditTextAuthor"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendName" />
+
+    <TextView
+        android:id="@+id/lendAuthor3"
+        android:layout_width="74dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp"
+
+        app:layout_constraintEnd_toStartOf="@+id/lendEditTextLName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendAuthor" />
+
+    <TextView
+        android:id="@+id/lendAuthor4"
+        android:layout_width="74dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Phone"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/lendTextPhone"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendAuthor3" />
+
+    <TextView
+        android:id="@+id/lendAuthor5"
+        android:layout_width="74dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="E-Mail"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18dp"
+
+        app:layout_constraintEnd_toStartOf="@+id/lendTextTextEmailaddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendAuthor4" />
+
+    <EditText
+        android:id="@+id/lendEditTextName"
+        android:layout_width="284dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Book Name"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendTitle" />
+
+    <EditText
+        android:id="@+id/lendEditTextAuthor"
+        android:layout_width="284dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Author's Name"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendEditTextName" />
+
+    <EditText
+        android:id="@+id/lendEditTextLName"
+        android:layout_width="284dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter Lender's Name"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendEditTextAuthor" />
+
+    <Button
+        android:id="@+id/lendLend"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:background="@drawable/imagetest"
+        android:textColor="	#FFFFFF"
+        android:layout_marginTop="488dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="createInfo"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/lendButtonBack"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:background="@drawable/imagetest"
+        android:textColor="	#FFFFFF"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="goBack"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lendLend"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/lendTextPhone"
+        android:layout_width="284dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendEditTextLName" />
+
+    <EditText
+        android:id="@+id/lendTextTextEmailaddress"
+        android:layout_width="284dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lendTextPhone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

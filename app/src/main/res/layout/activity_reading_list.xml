@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadingList"
+    android:background="@drawable/bg4019521">
+
+    <TextView
+        android:id="@+id/textViewRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:text="Reading List"
+        android:textAlignment="center"
+
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewRL"
+        android:layout_width="412dp"
+        android:layout_height="506dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRL" />
+
+    <Button
+        android:id="@+id/button6RL"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:background="@drawable/imagetest"
+        android:textColor="	#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="goToAdd"
+        android:text="Add New Book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewRL" />
+
+    <Button
+        android:id="@+id/button7RL"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:background="@drawable/imagetest"
+        android:textColor="	#FFFFFF"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="homePage"
+        android:text="Go Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button6RL"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewRL" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

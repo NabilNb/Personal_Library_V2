@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "747448972427",
+    "firebase_url": "https://personal-library-491-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "personal-library-491",
+    "storage_bucket": "personal-library-491.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747448972427:android:f5be7fdaaabb3b7c7d908e",
+        "android_client_info": {
+          "package_name": "com.example.personallibraryv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747448972427-41pfd9oh4v52qpo1f3037vmi0k56hcsa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk9C80M71fNbXZrPeIdSFYOw-tFmcWEBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747448972427-41pfd9oh4v52qpo1f3037vmi0k56hcsa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

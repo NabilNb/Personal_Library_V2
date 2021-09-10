@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookView"
+    android:background="@drawable/bg4019521">
+
+    <TextView
+        android:id="@+id/textviewinfo"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="Status"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/statusInfo"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:text="Book Information"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStat"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:background="@drawable/imagetest"
+        android:textColor="	#FFFFFF"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="goBack"
+        android:text="Go back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEdit"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusInfo" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:background="@drawable/imagetest"
+        android:textColor="	#FFFFFF"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="editInfo"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusInfo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/editTextName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfo" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="Author"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/editTextAuthor"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/statusInfo"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="64dp"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAuthor" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfo" />
+
+    <EditText
+        android:id="@+id/editTextAuthor"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
